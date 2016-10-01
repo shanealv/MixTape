@@ -11,6 +11,7 @@ namespace MixTapeApp.Views
     {
         public MainWindow()
         {
+            // manually assign data context
             DataContext = Resolver.Resolve<IMainViewModel>();
             InitializeComponent();
         }

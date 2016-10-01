@@ -98,8 +98,12 @@
     <Compile Include="Bootstrap\ViewModelsModule.cs" />
     <Compile Include="Bootstrap\ViewsModule.cs" />
     <Compile Include="Command\AsyncCommand.cs" />
-    <Compile Include="Command\AsyncContext.cs" />
+    <Compile Include="Command\AsyncMutex.cs" />
     <Compile Include="Converters\BoolToVisibilityConverter.cs" />
+    <Compile Include="Enumerations\Dynamics.cs" />
+    <Compile Include="Factory\CommandFactory\AsyncCommandGroupFactory.cs" />
+    <Compile Include="Factory\ViewFactory\IViewFactory.cs" />
+    <Compile Include="Factory\ViewFactory\ViewFactory.cs" />
     <Compile Include="Models\Measure.cs" />
     <Compile Include="Services\Resolver.cs" />
     <Compile Include="ViewModels\IViewModel.cs" />

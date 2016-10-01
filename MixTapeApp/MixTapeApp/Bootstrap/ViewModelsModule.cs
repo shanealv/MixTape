@@ -3,7 +3,10 @@ using MixTapeApp.ViewModels;
 
 namespace MixTapeApp.Bootstrap
 {
-    class ViewModelsModule:Module
+    /// <summary>
+    /// Autofac Module for registering View Models
+    /// </summary>
+    class ViewModelsModule : Module
     {
         protected override void Load(ContainerBuilder builder)
         {

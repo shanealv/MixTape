@@ -1,8 +1,10 @@
-﻿namespace MixTapeApp.ViewModels
+﻿using MixTapeApp.Properties;
+
+namespace MixTapeApp.ViewModels
 {
     class MainViewModel : ViewModel, IMainViewModel
     {
-        private string message = "Hello World!";
+        private string message = Resources.Message;
         public string Message
         {
             get { return message; }

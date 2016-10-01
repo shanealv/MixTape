@@ -9,6 +9,10 @@ using System.Windows.Data;
 
 namespace MixTapeApp.Converters
 {
+    /// <summary>
+    /// Example converter to use in XAML.
+    /// Converts Boolean values to Visibility types for use Framework Elements
+    /// </summary>
     class BoolToVisibilityConverter : IValueConverter
     {
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)

@@ -1,11 +1,8 @@
 ﻿using MixTapeApp.Bootstrap;
-using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Data;
-using System.Linq;
-using System.Threading.Tasks;
+using MixTapeApp.Properties;
+using System.IO;
 using System.Windows;
+using static System.Environment;
 
 namespace MixTapeApp
 {
@@ -16,8 +13,15 @@ namespace MixTapeApp
     {
         public App()
         {
-            // intialize the dependency injection container
+            // initialize the dependency injection container
             new Bootstrapper().Run();
+
+            // initialize some settings
+            if (string.IsNullOrEmpty(Settings.Default.LastSavePath) || !Directory.Exists(Settings.Default.LastSavePath))
+                Settings.Default.LastSavePath = GetFolderPath(SpecialFolder.MyDocuments);
+
+            if (string.IsNullOrEmpty(Settings.Default.LastOpenPath) || !Directory.Exists(Settings.Default.LastOpenPath))
+                Settings.Default.LastOpenPath = GetFolderPath(SpecialFolder.MyDocuments);
         }
     }
 }

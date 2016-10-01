@@ -1,4 +1,5 @@
-﻿using System.ComponentModel;
+﻿using System;
+using System.ComponentModel;
 
 namespace MixTapeApp.ViewModels
 {
@@ -7,5 +8,7 @@ namespace MixTapeApp.ViewModels
         string Title { get; }
 
         event PropertyChangedEventHandler PropertyChanged;
+
+        void SetState<T>(Action<T> action) where T : class, IViewModel;
     }
 }

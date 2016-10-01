@@ -3,7 +3,10 @@ using MixTapeApp.Views;
 
 namespace MixTapeApp.Bootstrap
 {
-    class ViewsModule:Module
+    /// <summary>
+    /// Autofac Module for registering Views
+    /// </summary>
+    class ViewsModule : Module
     {
         protected override void Load(ContainerBuilder builder)
         {
