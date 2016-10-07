@@ -28,6 +28,7 @@
             <Image Source="/Resources/Images/Da Thang.jpg" Height="60"/>
             <TextBlock Text="{Binding Message}" Width="300" Padding="5" TextWrapping="Wrap"
                    VerticalAlignment="Center" HorizontalAlignment="Left"/>
+            <Button Content="Click me!" Command="{Binding UpdateMessageCommand}"/>
         </StackPanel>
     </Grid>
 </Window>

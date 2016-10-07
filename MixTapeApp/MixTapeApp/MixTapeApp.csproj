@@ -105,6 +105,8 @@
     <Compile Include="Factory\ViewFactory\IViewFactory.cs" />
     <Compile Include="Factory\ViewFactory\ViewFactory.cs" />
     <Compile Include="Models\Measure.cs" />
+    <Compile Include="Services\DummyService\DummyService.cs" />
+    <Compile Include="Services\DummyService\IDummyService.cs" />
     <Compile Include="Services\Resolver.cs" />
     <Compile Include="ViewModels\IViewModel.cs" />
     <Compile Include="ViewModels\MainViewModel\IMainViewModel.cs" />

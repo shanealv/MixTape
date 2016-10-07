@@ -1,4 +1,5 @@
 ﻿using Autofac;
+using MixTapeApp.Services;
 
 namespace MixTapeApp.Bootstrap
 {
@@ -9,7 +10,7 @@ namespace MixTapeApp.Bootstrap
     {
         protected override void Load(ContainerBuilder builder)
         {
-            
+            builder.RegisterType<DummyService>().AsImplementedInterfaces().SingleInstance();
         }
     }
 }
