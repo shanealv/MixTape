@@ -7,4 +7,4 @@ namespace MixTapeApp.ViewModels
         string Message { get; set; }
         ICommand UpdateMessageCommand { get; }
     }
-}
+} 
